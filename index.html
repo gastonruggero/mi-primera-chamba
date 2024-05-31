@@ -14,18 +14,20 @@
     <p>Acá va a ir un texto super loco que se llama Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
         dolorum repellendus blanditiis consectetur exercitationem placeat nobis dolor incidunt illum? Ipsa est,
         praesentium ullam aperiam ea necessitatibus recusandae dolor adipisci voluptatibus!</p>
-    <p id="textoUnico">Este texto tiene un id que va a cambiar el color y un poco el tamaño</p>
-    <form action="post" class="formulario">
+    <span id="textoUnico">Este texto tiene un id que va a cambiar el color y un poco el tamaño</span>
+    <!-- <form target="_blank" class="formulario"> -->
         <label class="encabezado" for="nombre">Ingrese su nombre</label>
         <input name="nombre" type="text" id="nombre" placeholder="Nombre">
         <label class="encabezado" for="email">Ingrese su mail</label>
-        <input type="email" name="email" id="email" placeholder="Dirección de email">
-        <button>Enviá el cuestionario</button>
-    </form>
+        <input type="email" name="email" id="email" placeholder="Dirección de email" >
+        <label for="picURL" for="picURL">URL de imagen</label>
+        <input type="text" name="picURL" id="picURL" placeholder="Cargá una imagen desde una URL">
+        <button onclick="main()">Enviá el cuestionario</button>
+    <!-- </form> -->
     <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1734881022&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/trending-music-amer" title="Trending Music" target="_blank" style="color: #cccccc; text-decoration: none;">Trending Music</a> · <a href="https://soundcloud.com/trending-music-amer/sets/jazz" title="Jazz" target="_blank" style="color: #cccccc; text-decoration: none;">Jazz</a></div>
-    <img src="img/images.webp" alt="Hola, somos los teletubbies">
+    <img id="imagenCambiante" src="img/images.webp" alt="Hola, somos los teletubbies">
 
-
+<script src="app.js"></script>
 </body>
 
 </html>
